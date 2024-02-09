@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class gitMain {
 
   // Class ExchangeList to manage List of objects of transactions
   static ExchangeList exchangeList = new ExchangeList();
