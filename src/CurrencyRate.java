@@ -5,27 +5,29 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
- // Represents a currency rate with its currency code and exchange rate.
+// Represents a currency rate with its currency code and exchange rate.
 
 public enum CurrencyRate {
   EUR("EUR"), // Euro
   USD("USD"), // US Dollar
   GBP("GBP"), // British Pound
-  CHF("CHF");// Swiss Franc
+  CHF("CHF"); // Swiss Franc
 
   private final String codCurrency; // The currency code
   private double rate;  // The exchange rate
 
-  /*
-   * Constructs a new CurrencyRate object with the given currency code and nominal rate.
-   * codCurrency the currency code ("EUR" for Euro)
-  */
+  /**
+   * Constructs a new CurrencyRate object with the given currency code.
+   *
+   * @param codCurrency codCurrency the currency code ("EUR" for Euro)
+   */
   CurrencyRate(String codCurrency) {
     this.codCurrency = codCurrency;
   }
 
   /**
    * Retrieves the exchange rate of this currency.
+   *
    * @return the exchange rate
    */
 

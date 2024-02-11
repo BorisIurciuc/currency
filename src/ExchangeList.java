@@ -29,13 +29,6 @@ public class ExchangeList {
   }
 
   /**
-   * Gets the size of the list.
-   *
-   * @return the size of the list
-   */
-  public int getSize() { return list.size();  }
-
-  /**
    * Returns a deque containing all exchange operations in the list.
    *
    * @return a deque containing all exchange operations

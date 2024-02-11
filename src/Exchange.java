@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
  */
 
 public class Exchange implements Convertable {
+
   private String cyForSell; // The currency code for selling
   private String cyToBuy; // The currency code for buying
   private double amountToChange; // The amount to exchange
@@ -55,6 +56,7 @@ public class Exchange implements Convertable {
 
     this.current = LocalDateTime.now();
   }
+
   /**
    * Gets the amount from interface to exchange.
    *
@@ -66,9 +68,9 @@ public class Exchange implements Convertable {
 
   /**
    * Gets the index of the currency for selling in the CurrencyRate enum.
-   *
    */
   int indexSell;
+
   public int getIndexSell() {
     switch (cyForSell) {
       case "EUR" -> indexSell = 0;
@@ -81,9 +83,9 @@ public class Exchange implements Convertable {
 
   /**
    * Gets the index of the currency for buying in the CurrencyRate enum.
-   *
    */
   int indexBuy;
+
   public int getIndexBuy() {
     switch (cyToBuy) {
       case "EUR" -> indexBuy = 0;
@@ -101,7 +103,7 @@ public class Exchange implements Convertable {
    */
   @Override
   public double convert() {
-   return amountToChange *
+    return amountToChange *
         (CurrencyRate.values()[getIndexSell()].getRate()
             * CurrencyRate.values()[getIndexBuy()].getRate());
   }

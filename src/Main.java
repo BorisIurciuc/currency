@@ -18,8 +18,8 @@ public class Main {
    * Provides the console interface for carrying out currency exchange operations and managing
    * currency rates.
    *
-   * @throws IOException if an I/O error occurs while interacting with the console or
-   * accessing files
+   * @throws IOException if an I/O error occurs while interacting with the console or accessing
+   *                     files
    */
   public static void makeExchange() throws IOException {
     Scanner scanner = new Scanner(System.in);
@@ -94,8 +94,8 @@ public class Main {
   }
 
   /**
-   *
-   * Reads and prints the transaction history from the "list.txt" file.
+   * Reads and prints the transaction history from the "list.txt" file. In menu, method
+   * makeExchange(), case 4
    *
    * @throws FileNotFoundException if the file "list.txt" is not found
    */
