@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
  * The Exchange class Represents an exchange operation between two currencies.
  */
 
-public class Exchange implements Convertable {
+public class Exchange {
 
   private String cyForSell; // The currency code for selling
   private String cyToBuy; // The currency code for buying
@@ -58,15 +58,6 @@ public class Exchange implements Convertable {
   }
 
   /**
-   * Gets the amount from interface to exchange.
-   *
-   * @return the amount to exchange
-   */
-  public double getAmountToChange() {
-    return amountToChange;
-  }
-
-  /**
    * Gets the index of the currency for selling in the CurrencyRate enum.
    */
   int indexSell;
@@ -101,14 +92,13 @@ public class Exchange implements Convertable {
    *
    * @return the resulting amount after conversion
    */
-  @Override
   public double convert() {
     return amountToChange *
         (CurrencyRate.values()[getIndexSell()].getRate()
             * CurrencyRate.values()[getIndexBuy()].getRate());
   }
 
-  DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+  final DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
   /**
    * Returns a string representation of the Exchange object.
