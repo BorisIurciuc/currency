@@ -254,4 +254,5 @@ Exchange(data 09-02-2024 11:23:38 -- sell: 555.0 CHF - buy: 446.83 GBP),
 Exchange(data 09-02-2024 11:23:47 -- sell: 55.0 EUR - buy: 59.21 USD)][
 Exchange(data 09-02-2024 14:26:06 -- sell: 100.0 EUR - buy: 107.66 USD)][
 Exchange(data 09-02-2024 15:14:02 -- sell: 89.0 EUR - buy: 76.00 GBP)][
-Exchange(data 09-02-2024 17:44:51 -- sell: 1.0 EUR - buy: 1.08 USD)]
+Exchange(data 09-02-2024 17:44:51 -- sell: 1.0 EUR - buy: 1.08 USD)][
+Exchange(data 09-02-2024 18:02:10 -- sell: 1.0 EUR - buy: 1.08 USD)]
